@@ -1,0 +1,622 @@
+/* import poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+
+/* style */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'Poppins';
+    background-color: #FFFFFF;
+}
+
+/* container for the left half */
+
+.container-1 {
+    position: absolute;
+    width: 50%;
+    min-height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(218.31deg, #6DE071 0%, #18821C 100%);
+    padding: 25px;
+}
+
+.title {
+    padding-top: 3%;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    text-align: left;
+    color: #FFFFFF;
+} 
+
+.ques {
+    padding-top: 25px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+
+.line {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    height: 3px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items:center;
+}
+
+button {
+    border: none;
+}
+
+.option-1 {
+    transition-duration: 0.2s;
+    width: 70%;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+    color: #21AC27;
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.option-1:hover {
+    color: #FF0000;
+}
+
+
+
+/* container for the right half */
+
+.container-2 {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    right: 0px;
+    top: 0px;
+    padding: 25px;
+}
+
+.container-3 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    margin-bottom: 25px;
+}
+
+.sub-title {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    color: #FF0000;
+}
+
+.logo {
+    margin-left: auto;
+}
+
+#logo {
+    width: 120px;
+}
+
+#map {
+    opacity: 0.8;
+    max-width: 80%;
+    height: 65vh;
+ }
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* container for the popup forms */
+
+.container-4 {
+    position: absolute;
+    height: 85%;
+    width: 50%;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+}
+
+.form-1-container {
+    display: none;
+    border-radius: 25px;
+    padding: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 37px rgba(0, 0, 0, 0.13);
+}
+
+.form-title {
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input:not([type="radio"]) {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.13);
+}
+
+input[type="radio"] {
+    margin-right: 30px;
+    margin-bottom: 15px;
+    height: 20px;
+    width: 20px;
+    
+}
+
+.Criteres {
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.btn1 {
+    width: 45%;
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    background: #21AC27;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+.btn2 {
+    width: 45%;
+    height: 30px;
+    margin-left: 9%;
+    border: none;
+    border-radius: 100px;
+    background: #FF0000;
+    color: #FFFFFF;
+    font-weight: 800;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+  }
+
+.custom {
+    padding: 6px;
+    border-radius: 50px;
+    display: inline-flex;
+    cursor: pointer;
+    transition: background .2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.custom:hover, .custom:focus-within {
+    background: rgba(159, 159, 159, 0.1);
+ }
+
+.custom input {
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: none;
+    border: 0;
+    box-shadow: inset 0 0 0 1px black;
+    box-shadow: inset 0 0 0 1.5px black;
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    transition: box-shadow 150ms cubic-bezier(0.95, 0.15, 0.5, 1.25);
+}
+
+.custom input:focus {
+    outline: none; 
+}
+
+.custom input:checked {
+    box-shadow: inset 0 0 0 6px #FF0000; 
+}
+
+.custom span {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 20px;
+    padding: 0 8px; 
+}
+
+
+/* break points */
+
+/* 4K Screen */
+@media only screen and (min-width: 2560px) {
+    .title {
+        font-size: 65px;
+    }
+
+    .sub-title {
+        font-size: 55px;
+    }
+
+    #logo {
+        width: 220px;
+    }
+
+    .ques {
+        font-size: 48px;
+    }
+
+    .option-1 {
+        font-size: 32px;
+        height: 100px;
+    }
+
+    .container-4 {
+        height: 75%;
+    }
+
+    .form-title {
+        font-size: 32px;
+    }
+    
+    input:not([type="radio"]) {
+        height: 50px;
+        font-size: 22px;
+    }
+    
+    .Criteres {
+        font-size: 28px;
+    }
+    
+    .btn1 {
+        height: 50px;
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    
+    .btn2 {
+        margin-top: 30px;
+        height: 50px;
+        font-size: 26px;
+    }
+
+    .custom input {
+        width: 40px;
+        height: 40px;
+        border-radius: 100px;
+    }
+    
+    .custom input:checked {
+        box-shadow: inset 0 0 0 10px #FF0000; 
+    }
+
+    .custom span {
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 40px;
+        font-size: 24px;
+        padding: 0 8px; 
+    }
+}
+
+/* large laptop */
+@media only screen and (max-width: 1440px) {
+    .title {
+        padding-top: 5%;
+        font-size: 35px;
+    }
+
+    .sub-title {
+        font-size: 25px;
+    }
+
+    #logo {
+        width: 140px;
+    }
+
+    .ques {
+        font-size: 28px;
+    }
+
+    .option-1 {
+        font-size: 18px;
+        height: 50px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+    
+    input:not([type="radio"]) {
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .Criteres {
+        font-size: 18px;
+    }
+    
+    .btn1 .btn2 {
+        height: 30px;
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    
+
+    .custom input {
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+    }
+    
+    .custom input:checked {
+        box-shadow: inset 0 0 0 6px #FF0000; 
+    }
+
+    .custom span {
+        vertical-align: middle;
+        display: inline-block;
+        line-height: 20px;
+        font-size: 16px;
+        padding: 0 8px; 
+    }
+}
+
+/* laptop */
+@media only screen and (max-width: 1024px) {
+    .title {
+        padding-top: 4%;
+    }
+
+    .ques {
+        font-size: 22px;
+    }
+
+    .option-1 {
+        font-size: 14px;
+        height: 45px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    #map {
+        opacity: 0.8;
+        max-width: 80%;
+        height: 55vh;
+     }
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    #map {
+        display: none;
+    }
+    .container-1, .container-2, .container-4 {
+        display: block;
+        position: relative;
+        width: 100vw;
+    } 
+
+    .container-2 {
+        height: 22vh;
+    }
+
+    .sub-title {
+        font-size: 25px;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+    .title {
+        padding-top: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ques {
+        padding-top: 15px;
+    }
+}
+
+/* large mobile */
+@media only screen and (max-width: 425px) {
+    #map {
+        display: none;
+    }
+    .container-1, .container-2, .container-4 {
+        display: block;
+        position: relative;
+        width: 100vw;
+    } 
+
+    .container-2 {
+        height: 22vh;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    #logo {
+        width: 90px;
+    }
+
+    .title {
+        padding-top: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ques {
+        padding-top: 15px;
+    }
+
+    .option-1 {
+        font-size: 12px;
+        height: 40px;
+        width: 80%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .btn1 {
+        margin-top: 30px;
+        font-size: 12px;
+        width: 45%;
+        height: 30px;
+    }
+    
+    .btn2 {
+        margin-top: 30px;
+        font-size: 12px;
+        width: 45%;
+        height: 30px;
+        margin-left: 8.5%;
+    }
+}
+
+/* medium mobile */
+@media only screen and (max-width: 375px) {
+    #map {
+        display: none;
+    }
+    .container-1, .container-2, .container-4 {
+        display: block;
+        position: relative;
+        width: 100vw;
+    } 
+
+    .container-2 {
+        height: 22vh;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    #logo {
+        width: 90px;
+    }
+
+    .title {
+        padding-top: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ques {
+        padding-top: 15px;
+    }
+
+    .option-1 {
+        font-size: 12px;
+        height: 40px;
+        width: 85%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .btn1 {
+        margin-top: 30px;
+        font-size: 12px;
+        width: 45%;
+        height: 30px;
+    }
+    
+    .btn2 {
+        margin-top: 30px;
+        font-size: 12px;
+        width: 45%;
+        height: 30px;
+        margin-left: 8.5%;
+    }
+}
+
+/* small mobile */
+@media only screen and (max-width: 320px) {
+    #map {
+        display: none;
+    }
+    .container-1, .container-2, .container-4 {
+        display: block;
+        position: relative;
+        width: 100vw;
+    } 
+
+    .container-2 {
+        height: 22vh;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    #logo {
+        width: 90px;
+    }
+
+    .title {
+        padding-top: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .ques {
+        padding-top: 15px;
+    }
+
+    .option-1 {
+        font-size: 10px;
+        height: 40px;
+        width: 90%;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .btn1 {
+        margin-top: 30px;
+        font-size: 12px;
+        width: 45%;
+        height: 30px;
+    }
+    
+    .btn2 {
+        margin-top: 30px;
+        font-size: 12px;
+        width: 45%;
+        height: 30px;
+        margin-left: 8%;
+    }
+}
